@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/sideMenu"
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:background="#80000000"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:id="@+id/menuToggle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/focusable_background">
+
+                <ImageView
+                    android:id="@+id/toggleIcon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/baseline_menu_24" />
+
+                <TextView
+                    android:id="@+id/toggleLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Menu"
+                    android:textColor="@android:color/white"
+                    android:paddingStart="16dp"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menuHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:background="@drawable/focusable_background">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/baseline_home_24" />
+
+                <TextView
+                    android:id="@+id/labelHome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home"
+                    android:textColor="@android:color/white"
+                    android:paddingStart="16dp"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/menuDailyTopRanked"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:background="@drawable/focusable_background">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/baseline_star_purple500_24" />
+
+                <TextView
+                    android:id="@+id/labelDailyTopRanked"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Daily Top Ranked"
+                    android:textColor="@android:color/white"
+                    android:paddingStart="16dp"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/menuWeeklyTopRanked"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:background="@drawable/focusable_background">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/baseline_calendar_view_week_24" />
+
+                <TextView
+                    android:id="@+id/labelWeeklyTopRanked"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Weekly Top Ranked Show"
+                    android:textColor="@android:color/white"
+                    android:paddingStart="16dp"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/menuMonthlyTopRankedShow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:background="@drawable/focusable_background">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/baseline_date_range_24" />
+
+                <TextView
+                    android:id="@+id/labelMonthlyTopRankedShow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Monthly Top Ranked Show"
+                    android:textColor="@android:color/white"
+                    android:paddingStart="16dp"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menuSettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:background="@drawable/focusable_background">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/baseline_settings_applications_24" />
+
+                <TextView
+                    android:id="@+id/labelSettings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Settings"
+                    android:textColor="@android:color/white"
+                    android:paddingStart="16dp"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menuFavorite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:background="@drawable/focusable_background">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/baseline_favorite_24" />
+
+                <TextView
+                    android:id="@+id/labelFavorite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Favorite"
+                    android:textColor="@android:color/white"
+                    android:paddingStart="16dp"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menuWatchList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:background="@drawable/focusable_background">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/baseline_playlist_add_24" />
+
+                <TextView
+                    android:id="@+id/labelWatchList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WatchList"
+                    android:textColor="@android:color/white"
+                    android:paddingStart="16dp"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/mainContent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusable="true" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/miniPlayerContainer"
+        android:layout_width="300dp"
+        android:layout_height="170dp"
+        android:layout_gravity="top|end"
+        android:layout_margin="16dp">
+
+        <androidx.media3.ui.PlayerView
+            app:surface_type="texture_view"
+            android:id="@+id/player_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            app:use_controller="false"
+            app:show_buffering="when_playing"
+            android:clickable="true"
+            android:focusable="true"
+            app:resize_mode="fit" />
+
+        <View
+            android:id="@+id/clickOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/focusable_background"
+            android:clickable="true"
+            android:focusable="true" />
+    </FrameLayout>
+</FrameLayout>
