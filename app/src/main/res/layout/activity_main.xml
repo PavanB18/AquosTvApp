@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Background Image -->
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+    <!-- Horizontal Layout: Side Menu + Main Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <!-- Side Menu Container -->
+        <LinearLayout
+            android:id="@+id/sideMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#80000000"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <!-- Toggle Button -->
+            <LinearLayout
+                android:id="@+id/menuToggle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/toggleIcon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/baseline_menu_24" />
+
+                <TextView
+                    android:id="@+id/toggleLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Menu"
+                    android:textColor="@android:color/white"
+                    android:paddingStart="16dp"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <!-- Menu Items -->
+            <LinearLayout
+                android:id="@+id/menuHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:background="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/baseline_home_24" />
+
+                <TextView
+                    android:id="@+id/labelHome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home"
+                    android:textColor="@android:color/white"
+                    android:paddingStart="16dp"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menuSettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:background="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/baseline_settings_24" />
+
+                <TextView
+                    android:id="@+id/labelSettings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Settings"
+                    android:textColor="@android:color/white"
+                    android:paddingStart="16dp"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menuFavorite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:background="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/baseline_favorite_24" />
+
+                <TextView
+                    android:id="@+id/labelFavorite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Favorite"
+                    android:textColor="@android:color/white"
+                    android:paddingStart="16dp"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menuWatchList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:background="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/baseline_playlist_add_24" />
+
+                <TextView
+                    android:id="@+id/labelWatchList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WatchList"
+                    android:textColor="@android:color/white"
+                    android:paddingStart="16dp"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Main Content -->
+        <FrameLayout
+            android:id="@+id/mainContent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <!-- Ad PlayerView - This is where the ad and content will be displayed -->
+    <androidx.media3.ui.PlayerView
+
+        android:id="@+id/player_view"
+        android:layout_width="300dp"
+        android:layout_height="170dp"
+        android:layout_gravity="top|end"
+        android:layout_margin="16dp"
+        android:background="@android:color/transparent"
+        app:use_controller="false"
+        app:show_buffering="when_playing"
+        android:clickable="true"
+        android:focusable="true"
+        app:resize_mode="fit" />
+    <FrameLayout
+        android:id="@+id/adContainer"
+        android:layout_width="300dp"
+        android:layout_height="170dp"
+        android:layout_gravity="top|end"
+        android:layout_margin="16dp"
+        android:background="@android:color/transparent" />
+
+</FrameLayout>
