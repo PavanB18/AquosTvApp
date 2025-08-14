@@ -7,7 +7,10 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+<<<<<<< HEAD
     <!-- Background Image -->
+=======
+>>>>>>> f6e3d9509fad048079cdaf9a02fb5cae020da94f
     <ImageView
         android:id="@+id/backgroundImage"
         android:layout_width="match_parent"
@@ -15,22 +18,34 @@
         android:scaleType="centerCrop"
         android:src="@drawable/background" />
 
+<<<<<<< HEAD
     <!-- Horizontal Layout: Side Menu + Main Content -->
+=======
+>>>>>>> f6e3d9509fad048079cdaf9a02fb5cae020da94f
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal">
 
+<<<<<<< HEAD
         <!-- Side Menu Container -->
         <LinearLayout
             android:id="@+id/sideMenu"
             android:layout_width="wrap_content"
+=======
+        <LinearLayout
+            android:id="@+id/sideMenu"
+            android:layout_width="64dp"
+>>>>>>> f6e3d9509fad048079cdaf9a02fb5cae020da94f
             android:layout_height="match_parent"
             android:background="#80000000"
             android:orientation="vertical"
             android:padding="8dp">
 
+<<<<<<< HEAD
             <!-- Toggle Button -->
+=======
+>>>>>>> f6e3d9509fad048079cdaf9a02fb5cae020da94f
             <LinearLayout
                 android:id="@+id/menuToggle"
                 android:layout_width="match_parent"
@@ -40,7 +55,11 @@
                 android:padding="12dp"
                 android:clickable="true"
                 android:focusable="true"
+<<<<<<< HEAD
                 android:background="?attr/selectableItemBackground">
+=======
+                android:background="@drawable/focusable_background">
+>>>>>>> f6e3d9509fad048079cdaf9a02fb5cae020da94f
 
                 <ImageView
                     android:id="@+id/toggleIcon"
@@ -55,10 +74,17 @@
                     android:text="Menu"
                     android:textColor="@android:color/white"
                     android:paddingStart="16dp"
+<<<<<<< HEAD
                     android:textSize="18sp" />
             </LinearLayout>
 
             <!-- Menu Items -->
+=======
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+>>>>>>> f6e3d9509fad048079cdaf9a02fb5cae020da94f
             <LinearLayout
                 android:id="@+id/menuHome"
                 android:layout_width="match_parent"
@@ -68,7 +94,11 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:gravity="center_vertical"
+<<<<<<< HEAD
                 android:background="?attr/selectableItemBackground">
+=======
+                android:background="@drawable/focusable_background">
+>>>>>>> f6e3d9509fad048079cdaf9a02fb5cae020da94f
 
                 <ImageView
                     android:layout_width="24dp"
@@ -82,7 +112,90 @@
                     android:text="Home"
                     android:textColor="@android:color/white"
                     android:paddingStart="16dp"
+<<<<<<< HEAD
                     android:textSize="18sp" />
+=======
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/menuDailyTopRanked"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:background="@drawable/focusable_background">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/baseline_star_purple500_24" />
+
+                <TextView
+                    android:id="@+id/labelDailyTopRanked"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Daily Top Ranked"
+                    android:textColor="@android:color/white"
+                    android:paddingStart="16dp"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/menuWeeklyTopRanked"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:background="@drawable/focusable_background">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/baseline_calendar_view_week_24" />
+
+                <TextView
+                    android:id="@+id/labelWeeklyTopRanked"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Weekly Top Ranked Show"
+                    android:textColor="@android:color/white"
+                    android:paddingStart="16dp"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/menuMonthlyTopRankedShow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:background="@drawable/focusable_background">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/baseline_date_range_24" />
+
+                <TextView
+                    android:id="@+id/labelMonthlyTopRankedShow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Monthly Top Ranked Show"
+                    android:textColor="@android:color/white"
+                    android:paddingStart="16dp"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+>>>>>>> f6e3d9509fad048079cdaf9a02fb5cae020da94f
             </LinearLayout>
 
             <LinearLayout
@@ -94,12 +207,20 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:gravity="center_vertical"
+<<<<<<< HEAD
                 android:background="?attr/selectableItemBackground">
+=======
+                android:background="@drawable/focusable_background">
+>>>>>>> f6e3d9509fad048079cdaf9a02fb5cae020da94f
 
                 <ImageView
                     android:layout_width="24dp"
                     android:layout_height="24dp"
+<<<<<<< HEAD
                     android:src="@drawable/baseline_settings_24" />
+=======
+                    android:src="@drawable/baseline_settings_applications_24" />
+>>>>>>> f6e3d9509fad048079cdaf9a02fb5cae020da94f
 
                 <TextView
                     android:id="@+id/labelSettings"
@@ -108,7 +229,12 @@
                     android:text="Settings"
                     android:textColor="@android:color/white"
                     android:paddingStart="16dp"
+<<<<<<< HEAD
                     android:textSize="18sp" />
+=======
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+>>>>>>> f6e3d9509fad048079cdaf9a02fb5cae020da94f
             </LinearLayout>
 
             <LinearLayout
@@ -120,7 +246,11 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:gravity="center_vertical"
+<<<<<<< HEAD
                 android:background="?attr/selectableItemBackground">
+=======
+                android:background="@drawable/focusable_background">
+>>>>>>> f6e3d9509fad048079cdaf9a02fb5cae020da94f
 
                 <ImageView
                     android:layout_width="24dp"
@@ -134,7 +264,12 @@
                     android:text="Favorite"
                     android:textColor="@android:color/white"
                     android:paddingStart="16dp"
+<<<<<<< HEAD
                     android:textSize="18sp" />
+=======
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+>>>>>>> f6e3d9509fad048079cdaf9a02fb5cae020da94f
             </LinearLayout>
 
             <LinearLayout
@@ -146,7 +281,11 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:gravity="center_vertical"
+<<<<<<< HEAD
                 android:background="?attr/selectableItemBackground">
+=======
+                android:background="@drawable/focusable_background">
+>>>>>>> f6e3d9509fad048079cdaf9a02fb5cae020da94f
 
                 <ImageView
                     android:layout_width="24dp"
@@ -160,15 +299,24 @@
                     android:text="WatchList"
                     android:textColor="@android:color/white"
                     android:paddingStart="16dp"
+<<<<<<< HEAD
                     android:textSize="18sp" />
             </LinearLayout>
         </LinearLayout>
 
         <!-- Main Content -->
+=======
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+>>>>>>> f6e3d9509fad048079cdaf9a02fb5cae020da94f
         <FrameLayout
             android:id="@+id/mainContent"
             android:layout_width="0dp"
             android:layout_height="match_parent"
+<<<<<<< HEAD
             android:layout_weight="1" >
 
 
@@ -197,4 +345,37 @@
         android:layout_margin="16dp"
         android:background="@android:color/transparent" />
 
+=======
+            android:layout_weight="1"
+            android:focusable="true" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/miniPlayerContainer"
+        android:layout_width="300dp"
+        android:layout_height="170dp"
+        android:layout_gravity="top|end"
+        android:layout_margin="16dp">
+
+        <androidx.media3.ui.PlayerView
+            app:surface_type="texture_view"
+            android:id="@+id/player_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            app:use_controller="false"
+            app:show_buffering="when_playing"
+            android:clickable="true"
+            android:focusable="true"
+            app:resize_mode="fit" />
+
+        <View
+            android:id="@+id/clickOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/focusable_background"
+            android:clickable="true"
+            android:focusable="true" />
+    </FrameLayout>
+>>>>>>> f6e3d9509fad048079cdaf9a02fb5cae020da94f
 </FrameLayout>
